@@ -30,20 +30,24 @@ $max-content-width: {{ site.max_width }};
   margin: 0 auto; // center
 }
 .profiles-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem; /* spacing between cards */
 }
+
 .profile-card {
-  flex: 1 1 calc(33.333% - 2rem);
+  background: #f9f9f9;
+  padding: 1rem;
   text-align: center;
+  border-radius: 0.5rem;
 }
+
 .profile-photo {
   width: 150px;
   height: 150px;
-  object-fit: cover; /* neat crop */
-  border-radius: 8px; /* remove if you want square edges */
-  margin-bottom: .5rem;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
 }
 @media (max-width: 768px) { .profile-card { flex: 1 1 calc(50% - 2rem); } }
 @media (max-width: 480px) { .profile-card { flex: 1 1 100%; } }
