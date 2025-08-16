@@ -11,7 +11,7 @@ pis:
     link: "https://sites.google.com/view/drihsanullah/home"
     role: "Assistant Professor"
     email: "ihsan.ullah@universityofgalway.ie"
-    image: "ihsan.png
+    image: "ihsan.png"
 
 postdoc:
   - name: "Talha Iqbal"
