@@ -13,7 +13,7 @@ pis:
     email: "ihsan.ullah@universityofgalway.ie"
     image: "ihsan.png"
 
-postdoc:
+postdocs:
   - name: "Talha Iqbal"
     link: "https://scholar.google.com/citations?user=q_TIh-MAAAAJ&hl=en"
     role: "Sr. Post-doc Researcher"
