@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://vil-galway.github.io//sitemap.xml
+Sitemap: https://VIL-Galway.github.io//sitemap.xml
