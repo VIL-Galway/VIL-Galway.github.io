@@ -1,12 +1,35 @@
 ---
 layout: page
 permalink: /teaching/
-title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+title: Teaching
+description: Materials for courses you taught.
 nav: true
-nav_order: 6
+nav_order: 4
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+## Courses Taught
 
-Organize your courses by years, topics, or universities, however you like!
+- **Case Studies in Cybersecurity Analytics**  
+  *Instructor:* Ullah, I.  
+  *Year:* 2024  
+  *Semester:* Spring
+
+- **Case Studies in Data Analytics**  
+  *Instructor:* Ullah, I.  
+  *Year:* 2049  
+  *Semester:* Fall
+
+- **Object-Oriented Programming**  
+  *Instructor:* Ullah, I.  
+  *Year:* 2049  
+  *Semester:* Fall
+
+- **Principles of Machine Learning**  
+  *Instructor:* Ullah, I.  
+  *Year:* 2049  
+  *Semester:* Fall
+
+- **Research Topics in AI**  
+  *Instructor:* Ullah, I.  
+  *Year:* 2049  
+  *Semester:* Fall
