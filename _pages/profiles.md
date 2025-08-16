@@ -23,7 +23,7 @@ postdocs:
     link: "https://scholar.google.com/citations?user=4xAw2DUAAAAJ&hl=en"
     role: "Post-doc Researcher"
     email: "duyen.nguyen@universityofgalway.ie"
-    image: "duyen.png"
+    image: "duyen.jpg"
   - name: "Nahuel Emiliano"
     link: "https://scholar.google.com/citations?user=pPaGkJEAAAAJ&hl=es"
     role: "Visiting Post-doc Researcher"
@@ -61,9 +61,9 @@ phd:
     email: "g.guidone@universityofgalway.ie"
     image: "gianpiero.png"     
 researchers:
-  - name: "David Kim"
-    link: "/profiles/david-kim"
-    role: "Researcher"
-    email: "david@example.com"
-    image: "gianpiero.png"
+  - name: "Syed Haider Shah"
+    link: ""
+    role: "Research Assistant"
+    email: "syed.shah@universityofgalway.ie"
+    image: "syed.png"
 ---
