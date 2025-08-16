@@ -2,13 +2,13 @@
 layout: about
 title: About
 permalink: /
-subtitle: ''
+subtitle: this is subtitle
 
 profile:
   align: left
-  image: ''
+  image: /assets/images/logo.png
   image_circular: false
-  more_info: ''
+  more_info: fucked up
 
 selected_papers: true
 social: true
