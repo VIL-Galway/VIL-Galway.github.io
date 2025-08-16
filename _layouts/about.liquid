@@ -16,7 +16,7 @@ layout: default
       path=profile_image_path 
       class=profile_image_class 
       sizes=sizes 
-      style="width:200px; height:200px;" 
+      style="width:50px; height:50px;" 
       alt=page.profile.image 
       cache_bust=true 
     %}
@@ -40,17 +40,17 @@ layout: default
     <div class="clearfix">{{ content }}</div>
 
     {% if page.announcements and page.announcements.enabled %}
-      <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a></h2>
+      <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a></h2>
       {% include news.liquid limit=page.announcements.limit %}
     {% endif %}
 
     {% if page.latest_posts and page.latest_posts.enabled %}
-      <h2><a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a></h2>
+      <h2><a href="{{ '/blog/' | relative_url }}" style="color: inherit">Latest Posts</a></h2>
       {% include latest_posts.liquid limit=page.latest_posts.limit %}
     {% endif %}
 
     {% if page.selected_papers %}
-      <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a></h2>
+      <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected Publications</a></h2>
       {% include selected_papers.liquid %}
     {% endif %}
 
