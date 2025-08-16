@@ -10,13 +10,13 @@ layout: default
     {% else %}
       {% assign profile_image_class = 'z-depth-1 rounded mx-auto d-block mb-3' %}
     {% endif %}
-    {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3 }}px, (min-width: 576px) 30vw, 95vw{% endcapture %}
+    {% capture sizes %}(min-width: {{ site.max_width }}) 50px, (min-width: 576px) 50px, 50px{% endcapture %}
     {% include figure.liquid 
       loading="eager" 
       path=profile_image_path 
       class=profile_image_class 
       sizes=sizes 
-      style="max-width:200px; width:100%; height:auto;" 
+      style="width:5px; height:auto;" 
       alt=page.profile.image 
       cache_bust=true 
     %}
