@@ -6,9 +6,9 @@ layout: default
     {% if page.profile and page.profile.image %}
     {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
     {% if page.profile.image_circular %}
-      {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle mx-auto d-block mb-3' %}
+      {% assign profile_image_class = 'z-depth-1 rounded-circle mx-auto d-block mb-3' %}
     {% else %}
-      {% assign profile_image_class = 'img-fluid z-depth-1 rounded mx-auto d-block mb-3' %}
+      {% assign profile_image_class = 'z-depth-1 rounded mx-auto d-block mb-3' %}
     {% endif %}
     {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3 }}px, (min-width: 576px) 30vw, 95vw{% endcapture %}
     {% include figure.liquid 
@@ -16,11 +16,11 @@ layout: default
       path=profile_image_path 
       class=profile_image_class 
       sizes=sizes 
-      style="width:5px; height:5px;" 
+      style="max-width:200px; width:100%; height:auto;" 
       alt=page.profile.image 
       cache_bust=true 
     %}
-  {% endif %}
+  {% endif %}  
   
 
     <h1 class="post-title">
