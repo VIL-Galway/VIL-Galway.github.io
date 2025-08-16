@@ -1,29 +1,57 @@
-<!-- _includes/profile.liquid -->
-<div class="profile-card">
-  {% comment %}
-    We expect the caller to pass `person=person` to this include,
-    so use `include.person` to access fields.
-  {% endcomment %}
+---
+layout: default
+---
 
-  {% if include.person.image %}
-    <img src="{{ '/assets/img/' | append: include.person.image | relative_url }}"
-         alt="{{ include.person.name }}"
-         class="profile-photo">
-  {% endif %}
+<div class="post">
+  <article>
 
-  <h3>
-    {% if include.person.link %}
-      <a href="{{ include.person.link | relative_url }}">{{ include.person.name }}</a>
-    {% else %}
-      {{ include.person.name }}
-    {% endif %}
-  </h3>
+    <h2>PhD Students</h2>
+    <div class="profiles-grid">
+      {% for person in page.phd %}
+        <div class="profile-card">
+          {% if person.image %}
+            <img src="{{ '/assets/img/people/' | append: person.image | relative_url }}" alt="{{ person.name }}" class="profile-photo">
+          {% endif %}
+          <h3>
+            {% if person.link %}
+              <a href="{{ person.link | relative_url }}">{{ person.name }}</a>
+            {% else %}
+              {{ person.name }}
+            {% endif %}
+          </h3>
+          {% if person.role %}
+            <p class="role">{{ person.role }}</p>
+          {% endif %}
+          {% if person.email %}
+            <p><a href="mailto:{{ person.email }}">{{ person.email }}</a></p>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
 
-  {% if include.person.role %}
-    <p class="role">{{ include.person.role }}</p>
-  {% endif %}
+    <h2>Researchers</h2>
+    <div class="profiles-grid">
+      {% for person in page.researchers %}
+        <div class="profile-card">
+          {% if person.image %}
+            <img src="{{ '/assets/img/people/' | append: person.image | relative_url }}" alt="{{ person.name }}" class="profile-photo">
+          {% endif %}
+          <h3>
+            {% if person.link %}
+              <a href="{{ person.link | relative_url }}">{{ person.name }}</a>
+            {% else %}
+              {{ person.name }}
+            {% endif %}
+          </h3>
+          {% if person.role %}
+            <p class="role">{{ person.role }}</p>
+          {% endif %}
+          {% if person.email %}
+            <p><a href="mailto:{{ person.email }}">{{ person.email }}</a></p>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
 
-  {% if include.person.email %}
-    <p><a href="mailto:{{ include.person.email }}">{{ include.person.email }}</a></p>
-  {% endif %}
+  </article>
 </div>
