@@ -5,15 +5,16 @@ layout: default
 {% if page.profile and page.profile.image %}
   {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
   {% if page.profile.image_circular %}
-    {% assign profile_image_class = 'rounded-circle mx-auto d-block' %}
+    {% assign profile_image_class = 'rounded-circle' %}
   {% else %}
-    {% assign profile_image_class = 'rounded mx-auto d-block' %}
+    {% assign profile_image_class = 'rounded' %}
   {% endif %}
   {% include figure.liquid 
     loading="eager" 
     path=profile_image_path 
     class=profile_image_class 
-    style="width:50px; height:50px;" 
+    img_class=""   <!-- prevents figure.liquid from adding img-fluid -->
+    style="width:10px; height:10px;" 
     alt=page.profile.image 
     cache_bust=true 
   %}
