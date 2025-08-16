@@ -1,28 +1,62 @@
 ---
 layout: profiles
 permalink: /people/
-title: people
-description: members of the lab or group
+title: People
+description: Members of the lab or group
 nav: true
 nav_order: 1
 
-profiles:
-  # if you want to include more than one profile, just replicate the following block
-  # and create one content file for each profile inside _pages/
-  - align: right
-    image: prof_pic.jpg
-    content: about_einstein.md
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
-  - align: left
-    image: prof_pic.jpg
-    content: about_einstein.md
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
+# PhD Students
+phd:
+  - name: "Alice Smith"
+    link: "/profiles/alice-smith"
+    role: "PhD Student"
+    email: "alice@example.com"
+    image: "alice.jpg"
+  - name: "Bob Johnson"
+    link: "/profiles/bob-johnson"
+    role: "PhD Student"
+    email: "bob@example.com"
+    image: "bob.jpg"
+  - name: "Carol Lee"
+    link: "/profiles/carol-lee"
+    role: "PhD Student"
+    email: "carol@example.com"
+    image: "carol.jpg"
+
+# Researchers
+researchers:
+  - name: "David Kim"
+    link: "/profiles/david-kim"
+    role: "Researcher"
+    email: "david@example.com"
+    image: "david.jpg"
+  - name: "Eva Green"
+    link: "/profiles/eva-green"
+    role: "Researcher"
+    email: "eva@example.com"
+    image: "eva.jpg"
+  - name: "Frank White"
+    link: "/profiles/frank-white"
+    role: "Researcher"
+    email: "frank@example.com"
+    image: "frank.jpg"
+
+# PIs
+pis:
+  - name: "Prof. Emma Brown"
+    link: "/profiles/emma-brown"
+    role: "PI"
+    email: "emma@example.com"
+    image: "emma.jpg"
+  - name: "Prof. George Black"
+    link: "/profiles/george-black"
+    role: "PI"
+    email: "george@example.com"
+    image: "george.jpg"
+  - name: "Prof. Helen Gray"
+    link: "/profiles/helen-gray"
+    role: "PI"
+    email: "helen@example.com"
+    image: "helen.jpg"
 ---
