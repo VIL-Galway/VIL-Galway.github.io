@@ -3,28 +3,26 @@ layout: default
 ---
 <div class="post">
   <header class="post-header text-center">
-    <a href="{{ '/' | relative_url }}">
-      <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Visual Intelligence Logo" height="200" style="display:block; margin-bottom: 10px; margin-left:auto; margin-right:auto;">
-    </a>
-  
     {% if page.profile and page.profile.image %}
-      {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-      {% if page.profile.image_circular %}
-        {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle mx-auto d-block mb-3' %}
-      {% else %}
-        {% assign profile_image_class = 'img-fluid z-depth-1 rounded mx-auto d-block mb-3' %}
-      {% endif %}
-      {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3 }}px, (min-width: 576px) 30vw, 95vw{% endcapture %}
-      {% include figure.liquid 
-        loading="eager" 
-        path=profile_image_path 
-        class=profile_image_class 
-        sizes=sizes 
-        alt=page.profile.image 
-        cache_bust=true 
-      %}
+    {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+    {% if page.profile.image_circular %}
+      {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle mx-auto d-block mb-3' %}
+    {% else %}
+      {% assign profile_image_class = 'img-fluid z-depth-1 rounded mx-auto d-block mb-3' %}
     {% endif %}
+    {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3 }}px, (min-width: 576px) 30vw, 95vw{% endcapture %}
+    {% include figure.liquid 
+      loading="eager" 
+      path=profile_image_path 
+      class=profile_image_class 
+      sizes=sizes 
+      style="width:200px; height:200px;" 
+      alt=page.profile.image 
+      cache_bust=true 
+    %}
+  {% endif %}
   
+
     <h1 class="post-title">
       {% if site.title == 'blank' %}
         <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}
@@ -32,12 +30,11 @@ layout: default
         {{ site.title }}
       {% endif %}
     </h1>
-  
+
     {% if page.subtitle %}
       <p class="desc">{{ page.subtitle }}</p>
     {% endif %}
   </header>
-  
 
   <article>
     <div class="clearfix">{{ content }}</div>
