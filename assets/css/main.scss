@@ -41,7 +41,12 @@ $max-content-width: {{ site.max_width }};
   text-align: center;
   border-radius: 0.5rem;
 }
-
+.profile-card p a {
+  display: inline-block;
+  max-width: 100%;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
 .profile-photo {
   width: 150px;
   height: 150px;
