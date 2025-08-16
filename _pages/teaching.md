@@ -2,12 +2,10 @@
 layout: page
 permalink: /teaching/
 title: Teaching
-description: Materials for courses you taught.
+description:
 nav: true
 nav_order: 4
 ---
-
-## Courses Taught
 
 - **Case Studies in Cybersecurity Analytics**  
   *Instructor:* Ullah, I.  
