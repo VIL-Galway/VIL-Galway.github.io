@@ -23,3 +23,9 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-filled.scss",
   "tabler-icons/tabler-icons-outline.scss"
 ;
+.logo {
+  width: 50px;
+  height: auto;  // keeps aspect ratio
+  display: block;
+  margin: 0 auto; // center
+}
