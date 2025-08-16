@@ -34,8 +34,16 @@ $max-content-width: {{ site.max_width }};
   flex-wrap: wrap;
   gap: 2rem;
 }
-
 .profile-card {
   flex: 1 1 calc(33.333% - 2rem);
   text-align: center;
 }
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover; /* neat crop */
+  border-radius: 8px; /* remove if you want square edges */
+  margin-bottom: .5rem;
+}
+@media (max-width: 768px) { .profile-card { flex: 1 1 calc(50% - 2rem); } }
+@media (max-width: 480px) { .profile-card { flex: 1 1 100%; } }
