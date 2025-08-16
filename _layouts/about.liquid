@@ -2,23 +2,23 @@
 layout: default
 ---
 <div class="post">
-{% if page.profile and page.profile.image %}
-  {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-  {% if page.profile.image_circular %}
-    {% assign profile_image_class = 'rounded-circle' %}
-  {% else %}
-    {% assign profile_image_class = 'rounded' %}
-  {% endif %}
-  {% include figure.liquid 
-    loading="eager" 
-    path=profile_image_path 
-    class=profile_image_class 
-    img_class=""   <!-- prevents figure.liquid from adding img-fluid -->
-    style="width:10px; height:10px;" 
-    alt=page.profile.image 
-    cache_bust=true 
-  %}
-{% endif %}
+    {% if page.profile and page.profile.image %}
+      {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+      {% if page.profile.image_circular %}
+        {% assign profile_image_class = 'z-depth-1 rounded-circle mx-auto d-block mb-3' %}
+      {% else %}
+        {% assign profile_image_class = 'z-depth-1 rounded mx-auto d-block mb-3' %}
+      {% endif %}
+      {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3 }}px, (min-width: 576px) 30vw, 95vw{% endcapture %}
+      {% include figure.liquid 
+        loading="eager" 
+        path=profile_image_path 
+        class=profile_image_class 
+        sizes=sizes 
+        alt=page.profile.image 
+        cache_bust=true 
+      %}
+    {% endif %}
 
 
     <h1 class="post-title">
