@@ -29,3 +29,13 @@ $max-content-width: {{ site.max_width }};
   display: block;
   margin: 0 auto; // center
 }
+.profiles-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.profile-card {
+  flex: 1 1 calc(33.333% - 2rem);
+  text-align: center;
+}
