@@ -62,7 +62,7 @@ phd:
     image: "gianpiero.png"     
 researchers:
   - name: "Syed Haider Shah"
-    link: ""
+    link: "https://scholar.google.com/citations?user=gI9LissAAAAJ&hl=en"
     role: "Research Assistant"
     email: "syed.shah@universityofgalway.ie"
     image: "syed.png"
