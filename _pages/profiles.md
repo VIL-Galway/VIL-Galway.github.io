@@ -6,6 +6,29 @@ description: Members of the lab or group
 nav: true
 nav_order: 1
 
+pis:
+  - name: "Ihsan Ullah"
+    link: "https://sites.google.com/view/drihsanullah/home"
+    role: "Assistant Professor"
+    email: "ihsan.ullah@universityofgalway.ie"
+    image: "ihsan.png
+
+postdoc:
+  - name: "Talha Iqbal"
+    link: "https://scholar.google.com/citations?user=q_TIh-MAAAAJ&hl=en"
+    role: "Sr. Post-doc Researcher"
+    email: "talha.iqbal@universityofgalway.ie"
+    image: "talha.png"
+  - name: "Duyen Nguyen"
+    link: "https://scholar.google.com/citations?user=4xAw2DUAAAAJ&hl=en"
+    role: "Post-doc Researcher"
+    email: "duyen.nguyen@universityofgalway.ie"
+    image: "duyen.png"
+  - name: "Nahuel Emiliano"
+    link: "https://scholar.google.com/citations?user=pPaGkJEAAAAJ&hl=es"
+    role: "Visiting Post-doc Researcher"
+    email: "nahuel.garcia@gcloud.ua.es"
+    image: "missing.png"
 phd:
   - name: "Adeel Hafeez"
     link: "https://scholar.google.com/citations?user=m3T4HOAAAAAJ&hl=en"
