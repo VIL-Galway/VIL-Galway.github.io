@@ -5,16 +5,16 @@ layout: default
     {% if page.profile and page.profile.image %}
       {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
       {% if page.profile.image_circular %}
-        {% assign profile_image_class = 'z-depth-1 rounded-circle mx-auto d-block mb-3' %}
+        {% assign profile_image_class = 'rounded-circle mx-auto d-block' %}
       {% else %}
-        {% assign profile_image_class = 'z-depth-1 rounded mx-auto d-block mb-3' %}
+        {% assign profile_image_class = 'rounded mx-auto d-block' %}
       {% endif %}
-      {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3 }}px, (min-width: 576px) 30vw, 95vw{% endcapture %}
+
       {% include figure.liquid 
         loading="eager" 
         path=profile_image_path 
-        class=profile_image_class 
-        sizes=sizes 
+        class=profile_image_class
+        style="width:50px; height:50px;" 
         alt=page.profile.image 
         cache_bust=true 
       %}
