@@ -1,32 +1,32 @@
 ---
 layout: page
 ---
-<div class="post">
-  <article>
+<!-- _includes/profile.liquid -->
+<div class="profile-card">
+  {% comment %}
+    We expect the caller to pass `person=person` to this include,
+    so use `include.person` to access fields.
+  {% endcomment %}
 
-    <!-- PhD Students -->
-    <h2>PhD Students</h2>
-    <div class="profiles-grid">
-      {% for person in page.phd %}
-        {% include profile.liquid profile=person %}
-      {% endfor %}
-    </div>
+  {% if include.person.image %}
+    <img src="{{ '/assets/img/' | append: include.person.image | relative_url }}"
+         alt="{{ include.person.name }}"
+         class="profile-photo">
+  {% endif %}
 
-    <!-- Researchers -->
-    <h2>Researchers</h2>
-    <div class="profiles-grid">
-      {% for person in page.researchers %}
-        {% include profile.liquid profile=person %}
-      {% endfor %}
-    </div>
+  <h3>
+    {% if include.person.link %}
+      <a href="{{ include.person.link | relative_url }}">{{ include.person.name }}</a>
+    {% else %}
+      {{ include.person.name }}
+    {% endif %}
+  </h3>
 
-    <!-- PIs -->
-    <h2>PIs</h2>
-    <div class="profiles-grid">
-      {% for person in page.pis %}
-        {% include profile.liquid profile=person %}
-      {% endfor %}
-    </div>
+  {% if include.person.role %}
+    <p class="role">{{ include.person.role }}</p>
+  {% endif %}
 
-  </article>
+  {% if include.person.email %}
+    <p><a href="mailto:{{ include.person.email }}">{{ include.person.email }}</a></p>
+  {% endif %}
 </div>
