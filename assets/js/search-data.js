@@ -398,14 +398,14 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
-          description: "",
-          section: "News",},{id: "news-our-pi-ihsan-ullah-joins-the-atlantec-ie-conference-plenary-on-hype-impact-and-what-s-next-with-yvonne-comer-amp-amp-stephanus-meiring-bailey-allen-hall-univ-of-galway",
+            },},{id: "news-our-pi-ihsan-ullah-joins-the-atlantec-ie-conference-plenary-on-hype-impact-and-what-s-next-with-yvonne-comer-amp-amp-stephanus-meiring-bailey-allen-hall-univ-of-galway",
           title: 'Our PI, Ihsan Ullah, joins the AtlanTec.ie Conference Plenary on “Hype, Impact, and...',
           description: "",
           section: "News",},{id: "news-excited-that-our-pi-ihsan-ullah-will-be-speaking-at-velo-city-2025-in-gdańsk-poland-tomorrow-14-15-14-45-session-infrastructure-and-modelling-shaping-the-urban-transformation-together-️",
           title: 'Excited that our PI, Ihsan Ullah, will be speaking at Velo-City 2025 in...',
+          description: "",
+          section: "News",},{id: "news-our-lab-s-paper-has-been-accepted-at-miccai-amai-2025-for-a-poster-presentation",
+          title: 'Our lab’s paper has been accepted at MICCAI-AMAI 2025 for a poster presentation....',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
