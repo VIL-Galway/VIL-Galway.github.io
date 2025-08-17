@@ -406,8 +406,8 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+            },},{id: "news-excited-that-our-pi-ihsan-ullah-will-be-speaking-at-velo-city-2025-in-gdańsk-poland-tomorrow-14-15-14-45-session-infrastructure-and-modelling-shaping-the-urban-transformation-together-️",
+          title: 'Excited that our PI, Ihsan Ullah, will be speaking at Velo-City 2025 in...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
