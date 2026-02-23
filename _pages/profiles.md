@@ -56,4 +56,9 @@ researchers:
     role: "Research Assistant"
     email: "syed.shah@universityofgalway.ie"
     image: "syed.png"
+  - name: "Saahil Khanna"
+    link: "https://scholar.google.com/citations?user=UWMSGkcAAAAJ&hl=en&authuser=1&oi=sra"
+    role: "Research Assistant"
+    email: "saahil.khanna@universityofgalway.ie"
+    image: "saahil.png"
 ---
