@@ -10,9 +10,9 @@ layout: default
     <!-- ===================== -->
     {% if page.pis %}
     <h2>Faculty</h2>
-    <div class="pi-grid">
+    <div class="profiles-grid">
       {% for person in page.pis %}
-        <div class="pi-card">
+        <div class="profiles-card">
           {% if person.image %}
             <img src="{{ '/assets/img/people/' | append: person.image | relative_url }}" class="profile-photo">
           {% endif %}
@@ -72,9 +72,6 @@ layout: default
           <div class="profile-icons">
             {% if person.email %}
               <a href="mailto:{{ person.email }}"><i class="fas fa-envelope"></i></a>
-            {% endif %}
-            {% if person.link %}
-              <a href="{{ person.link }}"><i class="fas fa-globe"></i></a>
             {% endif %}
           </div>
 
