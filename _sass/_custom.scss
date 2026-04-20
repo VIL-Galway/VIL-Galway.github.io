@@ -1,0 +1,129 @@
+/* =========================
+   PEOPLE PAGE – LAB STYLE
+========================= */
+
+/* Section titles */
+.post h2 {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 0.4rem;
+}
+
+/* GRID */
+.profiles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.8rem;
+}
+
+/* =========================
+   PI (HIGHLIGHTED)
+========================= */
+.pi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.pi-card {
+  padding: 2rem;
+  text-align: center;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #f8f9ff, #ffffff);
+  border: 1px solid #e6e8f0;
+  transition: all 0.3s ease;
+}
+
+.pi-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   NORMAL CARDS
+========================= */
+.profile-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 1.3rem 1rem;
+  text-align: center;
+  border: 1px solid #f0f0f0;
+  transition: all 0.25s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.07);
+}
+
+/* =========================
+   IMAGE
+========================= */
+.profile-photo {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid #eee;
+}
+
+/* Bigger PI image */
+.pi-card .profile-photo {
+  width: 140px;
+  height: 140px;
+}
+
+/* =========================
+   TEXT
+========================= */
+.profile-card h3,
+.pi-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.profile-card h3 a,
+.pi-card h3 a {
+  text-decoration: none;
+  color: #222;
+}
+
+.profile-card h3 a:hover,
+.pi-card h3 a:hover {
+  color: #007acc;
+}
+
+.role {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 0.4rem;
+}
+
+/* =========================
+   ICON LINKS
+========================= */
+.profile-icons {
+  margin-top: 0.5rem;
+}
+
+.profile-icons a {
+  margin: 0 6px;
+  font-size: 1rem;
+  color: #666;
+  transition: 0.2s;
+}
+
+.profile-icons a:hover {
+  color: #000;
+}
+
+/* =========================
+   ALUMNI (subtle)
+========================= */
+.alumni .profile-card {
+  opacity: 0.75;
+}
