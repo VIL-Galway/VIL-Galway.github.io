@@ -1,81 +1,58 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: Pav Analytics
+description: AI-based pavement condition assessment for cycling and walking infrastructure
+img: assets/img/projects/pav-analytics.jpg
 importance: 1
-category: work
-related_publications: true
+category: Infrastructure
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Overview
+**Pav Analytics** is an AI-based pavement condition assessment system focused on improving walking and cycling infrastructure. The project integrates intelligent sensing, data analytics, and visualization tools to support infrastructure maintenance and planning.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+## Funding
+- EU Commission RRF (Grant Number 22/NCF/OT/11220)  
+- Insight Research Ireland (Grant Number 12/RC/2289_P2)
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+## Duration
+**July 2023 – March 2025**
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+## Team
+- **PI:** Dr Ihsan Ullah  
+- **Co-PI:** Dr Waqar Shahid Qureshi  
 
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+**Researchers:**
+- Syed M Haider Shah  
+- Muhammad Hassam Baig  
+- Jeziel Antonio Ayala Garcia  
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+## Collaborators
+- Kathleen Belbonjean (Societal Impact Champion, GortCycleTrail)  
+- Gerard O’Dea (Asset Management Officer, TII)  
+- David Power  
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+## Description
+The project develops an intelligent sensing and analytics platform for assessing pavement conditions.
 
-{% raw %}
+- Sensors mounted on bicycles collect pavement data  
+- Data is processed using AI and computer vision techniques  
+- Outputs are visualized through a software suite  
+- Generates standardized pavement condition ratings (PSCI)  
+- Supports stakeholder-driven refinement  
+- Enables citizen participation for reporting issues  
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+## Links
+- 🌐 [Project Website](https://www.paveanalytics.eu/)  
+- 🏆 [Award Shortlist](https://itag.ie/itag-excellence-awards-2025-shortlist/)
 
-{% endraw %}
+## Thematic Areas
+- Artificial Intelligence / Machine Learning  
+- Computer Vision & Robotics  
+- Smart Infrastructure  
+- Health  
+
+## Impact (UN SDGs)
+- SDG 3: Health and Wellbeing  
+- SDG 9: Industry, Innovation & Infrastructure  
+- SDG 11: Sustainable Cities & Communities  
+- SDG 13: Climate Action  
