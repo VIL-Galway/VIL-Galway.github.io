@@ -127,3 +127,157 @@
 .alumni .profile-card {
   opacity: 0.75;
 }
+
+/* =========================
+   TEACHING PAGE
+========================= */
+
+.teaching-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.teaching-card {
+  background: #ffffff;
+  border: 1px solid #ececec;
+  border-radius: 14px;
+  padding: 1.4rem 1.2rem;
+  transition: all 0.25s ease;
+}
+
+.teaching-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.07);
+}
+
+.teaching-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  line-height: 1.4;
+}
+
+.teaching-card p {
+  margin-bottom: 0.35rem;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* =========================
+   PUBLICATIONS (DEEPMIND STYLE)
+========================= */
+
+.publications h2 {
+  margin-top: 3rem;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.4rem;
+}
+
+/* FEATURED GRID */
+.pub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+/* CARD */
+.pub-grid .card {
+  border: 1px solid #eee;
+  border-radius: 14px;
+  padding: 1.2rem;
+  transition: all 0.25s ease;
+  background: #fff;
+}
+
+.pub-grid .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+}
+
+/* TITLE */
+.pub-grid .title {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+/* AUTHORS */
+.pub-grid .author {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* VENUE */
+.pub-grid .periodical {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* LIST STYLE */
+.pub-list {
+  margin-top: 1.5rem;
+}
+
+.pub-list li {
+  margin-bottom: 1.2rem;
+}
+
+/* BADGE */
+.pub-badge {
+  display: inline-block;
+  background: #007acc;
+  color: white;
+  font-size: 0.7rem;
+  padding: 2px 6px;
+  border-radius: 6px;
+  margin-left: 6px;
+}
+
+/* =========================
+   PUBLICATIONS UPGRADE
+========================= */
+
+/* Title */
+.title {
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin-bottom: 0.3rem;
+}
+
+/* Authors */
+.author {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Venue */
+.periodical {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* Buttons spacing */
+.links {
+  margin-top: 0.5rem;
+}
+
+/* NEW badge */
+.pub-badge {
+  display: inline-block;
+  background: #007acc;
+  color: white;
+  font-size: 0.65rem;
+  padding: 2px 6px;
+  border-radius: 6px;
+  margin-left: 6px;
+}
+
+/* Featured paper */
+.featured-paper {
+  border-left: 3px solid #007acc;
+  padding-left: 10px;
+}

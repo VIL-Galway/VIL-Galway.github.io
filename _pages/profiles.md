@@ -35,14 +35,14 @@ postdocs:
     email: "aaron.flanagan@universityofgalway.ie"
     image: "aaron.png"
   - name: "Hafsa Iqbal"
-    link: "https://scholar.google.com/citations?user=q_TIh-MAAAAJ&hl=en"
+    link: "https://scholar.google.com/citations?user=t-dAFOIAAAAJ&hl=en&oi=sra"
     role: "Post-doc Researcher"
     email: "hafsa.iqbal@universityofgalway.ie"
     image: "hafsa.png"
   - name: "Muhammad Ammar Ul Hassan"
-    link: "https://scholar.google.com/citations?user=q_TIh-MAAAAJ&hl=en"
+    link: "https://scholar.google.com/citations?user=OGq4xDYAAAAJ&hl=en&oi=ao"
     role: "Post-doc Researcher"
-    email: "https://scholar.google.com/citations?hl=en&user=OGq4xDYAAAAJ"
+    email: "muhammad.ammarulhassan@universityofgalway.ie"
     image: "ammar.png"
 
 phd:

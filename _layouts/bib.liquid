@@ -48,7 +48,14 @@
   <!-- Entry bib key -->
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
     <!-- Title -->
-    <div class="title">{{ entry.title }}</div>
+    <div class="title">
+      {{ entry.title }}
+
+      {% assign current_year = 'now' | date: "%Y" %}
+      {% if entry.year == current_year %}
+        <span class="pub-badge">NEW</span>
+      {% endif %}
+    </div>
     <!-- Author -->
     <div class="author">
       {% assign author_array_size = entry.author_array | size %}
