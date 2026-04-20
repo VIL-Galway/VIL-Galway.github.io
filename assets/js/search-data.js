@@ -30,6 +30,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
+        },{id: "nav-projects",
+          title: "projects",
+          description: "A growing collection of your cool projects.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
         },{id: "nav-contact-us",
           title: "Contact Us",
           description: "",
@@ -400,12 +407,7 @@ ninja.data = [{
             window.location.href = "/blog/2015/formatting-and-links/";
           
         },
-      },{id: "books-the-godfather",
-          title: 'The Godfather',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather/";
-            },},{id: "news-our-pi-ihsan-ullah-joins-the-atlantec-ie-conference-plenary-on-hype-impact-and-what-s-next-with-yvonne-comer-amp-amp-stephanus-meiring-bailey-allen-hall-univ-of-galway",
+      },{id: "news-our-pi-ihsan-ullah-joins-the-atlantec-ie-conference-plenary-on-hype-impact-and-what-s-next-with-yvonne-comer-amp-amp-stephanus-meiring-bailey-allen-hall-univ-of-galway",
           title: 'Our PI, Ihsan Ullah, joins the AtlanTec.ie Conference Plenary on “Hype, Impact, and...',
           description: "",
           section: "News",},{id: "news-excited-that-our-pi-ihsan-ullah-will-be-speaking-at-velo-city-2025-in-gdańsk-poland-tomorrow-14-15-14-45-session-infrastructure-and-modelling-shaping-the-urban-transformation-together-️",
