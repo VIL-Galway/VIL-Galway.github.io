@@ -8,9 +8,9 @@ layout: default
     <!-- PIs -->
     {% if page.pis %}
     <h2>Principal Investigators</h2>
-    <div class="pi-grid">
+    <div class="profiles-grid">
       {% for person in page.pis %}
-        <div class="pi-card">
+        <div class="profile-card">
           {% if person.image %}
             <img src="{{ '/assets/img/people/' | append: person.image | relative_url }}" alt="{{ person.name }}" class="profile-photo">
           {% endif %}
@@ -39,9 +39,9 @@ layout: default
     <!-- Postdocs -->
     {% if page.postdocs %}
     <h2>Postdocs</h2>
-    <div class="pi-grid">
+    <div class="profiles-grid">
       {% for person in page.postdocs %}
-        <div class="pi-card">
+        <div class="profile-card">
           {% if person.image %}
             <img src="{{ '/assets/img/people/' | append: person.image | relative_url }}" alt="{{ person.name }}" class="profile-photo">
           {% endif %}
@@ -70,9 +70,9 @@ layout: default
     <!-- PhD Students -->
     {% if page.phd %}
     <h2>PhD Students</h2>
-    <div class="pi-grid">
+    <div class="profiles-grid">
       {% for person in page.phd %}
-        <div class="pi-card">
+        <div class="profile-card">
           {% if person.image %}
             <img src="{{ '/assets/img/people/' | append: person.image | relative_url }}" alt="{{ person.name }}" class="profile-photo">
           {% endif %}
@@ -101,9 +101,9 @@ layout: default
     <!-- Researchers -->
     {% if page.researchers %}
     <h2>Researchers</h2>
-    <div class="pi-grid">
+    <div class="profiles-grid">
       {% for person in page.researchers %}
-        <div class="pi-card">
+        <div class="profile-card">
           {% if person.image %}
             <img src="{{ '/assets/img/people/' | append: person.image | relative_url }}" alt="{{ person.name }}" class="profile-photo">
           {% endif %}
@@ -134,9 +134,9 @@ layout: default
     <!-- ===================== -->
     {% if page.alumni %}
     <h2>Alumni</h2>
-    <div class="pi-grid alumni">
+    <div class="profiles-grid alumni">
       {% for person in page.alumni %}
-        <div class="pi-card">
+        <div class="profile-card">
           {% if person.image %}
             <img src="{{ '/assets/img/people/' | append: person.image | relative_url }}" class="profile-photo">
           {% endif %}
