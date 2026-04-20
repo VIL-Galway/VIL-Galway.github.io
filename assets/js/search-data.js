@@ -31,7 +31,7 @@ ninja.data = [{
             window.location.href = "/teaching/";
           },
         },{id: "nav-projects",
-          title: "projects",
+          title: "Projects",
           description: "A growing collection of your cool projects.",
           section: "Navigation",
           handler: () => {
@@ -416,44 +416,44 @@ ninja.data = [{
           section: "News",},{id: "news-our-lab-s-paper-has-been-accepted-at-miccai-amai-2025-for-a-poster-presentation",
           title: 'Our lab’s paper has been accepted at MICCAI-AMAI 2025 for a poster presentation....',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+          section: "News",},{id: "projects-pav-analytics",
+          title: 'Pav Analytics',
+          description: "AI-based pavement condition assessment for cycling and walking infrastructure",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+            },},{id: "projects-transparency-amp-explainability-in-ai",
+          title: 'Transparency &amp;amp; Explainability in AI',
+          description: "Semantic Web approach for linked model and data cards in AI systems",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
+            },},{id: "projects-fairness-amp-explainability-in-llms",
+          title: 'Fairness &amp;amp; Explainability in LLMs',
+          description: "Bias detection and semantic enrichment for large language models",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
+            },},{id: "projects-ai4mi-augmented-reading-room",
+          title: 'AI4MI – Augmented Reading Room',
+          description: "AI-powered radiology workflows using Apple Vision Pro",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
+            },},{id: "projects-multi-agent-stress-monitoring",
+          title: 'Multi-Agent Stress Monitoring',
+          description: "Agentic AI framework for chronic stress detection",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_project/";
-            },},{id: "projects-project-6",
-          title: 'project 6',
-          description: "a project with no image",
+            },},{id: "projects-urge-acute-aortic-syndrome",
+          title: 'URGE – Acute Aortic Syndrome',
+          description: "ML-based mortality prediction for cardiovascular surgery",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_project/";
-            },},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
+            },},{id: "projects-cardiovascular-data-analysis",
+          title: 'Cardiovascular Data Analysis',
+          description: "ML &amp; DL for multi-modal cardiovascular imaging",
           section: "Projects",handler: () => {
               window.location.href = "/projects/7_project/";
-            },},{id: "projects-project-8",
-          title: 'project 8',
-          description: "an other project with a background image and giscus comments",
+            },},{id: "projects-transparency-in-agentic-ai",
+          title: 'Transparency in Agentic AI',
+          description: "Explainable and compliant agent-based AI systems",
           section: "Projects",handler: () => {
               window.location.href = "/projects/8_project/";
             },},{id: "projects-project-9",
@@ -461,6 +461,11 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "projects-project-1",
+          title: 'project 1',
+          description: "with background image",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/PROJECT_TEMP/";
             },},{
         id: 'social-email',
         title: 'email',
