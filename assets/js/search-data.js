@@ -18,14 +18,14 @@ ninja.data = [{
           },
         },{id: "nav-publications",
           title: "Publications",
-          description: "Publications by categories in reversed chronological order",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
           },
         },{id: "nav-teaching",
           title: "Teaching",
-          description: "",
+          description: "Courses taught and supervised by the lab.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
