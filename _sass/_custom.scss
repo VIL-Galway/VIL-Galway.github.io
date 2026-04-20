@@ -293,3 +293,43 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Only affect PI section */
+.post h2:first-of-type + .profiles-grid {
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
+}
+
+/* Mobile fallback */
+@media (max-width: 768px) {
+  .post h2:first-of-type + .profiles-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.profile-card a i {
+  margin-right: 6px;
+  color: #007acc;
+}
+
+/* Bigger cards ONLY for PIs */
+.post h2:first-of-type + .profiles-grid .profile-card {
+  padding: 1.5rem;
+  transform: scale(1.05);
+}
+
+/* Bigger image for PIs */
+.post h2:first-of-type + .profiles-grid .profile-photo {
+  width: 180px;
+  height: 180px;
+}
+
+/* Bigger name */
+.post h2:first-of-type + .profiles-grid h3 {
+  font-size: 1.25rem;
+}
+
+/* Slight emphasis */
+.post h2:first-of-type + .profiles-grid .profile-card {
+  background: #ffffff;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
