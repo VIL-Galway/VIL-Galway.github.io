@@ -5,159 +5,113 @@ layout: default
 <div class="post">
   <article>
 
-    <!-- ===================== -->
     <!-- PIs -->
-    <!-- ===================== -->
     {% if page.pis %}
-    <h2>Faculty</h2>
+    <h2>Principal Investigators</h2>
     <div class="profiles-grid">
       {% for person in page.pis %}
-        <div class="profiles-card">
+        <div class="profile-card">
           {% if person.image %}
-            <img src="{{ '/assets/img/people/' | append: person.image | relative_url }}" class="profile-photo">
+            <img src="{{ '/assets/img/people/' | append: person.image | relative_url }}" alt="{{ person.name }}" class="profile-photo">
           {% endif %}
-
           <h3>
             {% if person.link %}
-              <a href="{{ person.link }}">{{ person.name }}</a>
+              <a href="{{ person.link | relative_url }}">{{ person.name }}</a>
             {% else %}
               {{ person.name }}
             {% endif %}
           </h3>
-
           {% if person.role %}
             <p class="role">{{ person.role }}</p>
           {% endif %}
-
-          <!-- ICONS -->
-          <div class="profile-icons">
-            {% if person.email %}
-              <a href="mailto:{{ person.email }}"><i class="fas fa-envelope"></i></a>
-            {% endif %}
-            {% if person.link %}
-              <a href="{{ person.link }}"><i class="fas fa-globe"></i></a>
-            {% endif %}
-          </div>
-
+          {% if person.email %}
+            <p><a href="mailto:{{ person.email }}">{{ person.email }}</a></p>
+          {% endif %}
         </div>
       {% endfor %}
     </div>
     {% endif %}
 
-
-    <!-- ===================== -->
     <!-- Postdocs -->
-    <!-- ===================== -->
     {% if page.postdocs %}
-    <h2>Postdoctoral Researchers</h2>
+    <h2>Postdocs</h2>
     <div class="profiles-grid">
       {% for person in page.postdocs %}
         <div class="profile-card">
           {% if person.image %}
-            <img src="{{ '/assets/img/people/' | append: person.image | relative_url }}" class="profile-photo">
+            <img src="{{ '/assets/img/people/' | append: person.image | relative_url }}" alt="{{ person.name }}" class="profile-photo">
           {% endif %}
-
           <h3>
             {% if person.link %}
-              <a href="{{ person.link }}">{{ person.name }}</a>
+              <a href="{{ person.link | relative_url }}">{{ person.name }}</a>
             {% else %}
               {{ person.name }}
             {% endif %}
           </h3>
-
           {% if person.role %}
             <p class="role">{{ person.role }}</p>
           {% endif %}
-
-          <div class="profile-icons">
-            {% if person.email %}
-              <a href="mailto:{{ person.email }}"><i class="fas fa-envelope"></i></a>
-            {% endif %}
-          </div>
-
+          {% if person.email %}
+            <p><a href="mailto:{{ person.email }}">{{ person.email }}</a></p>
+          {% endif %}
         </div>
       {% endfor %}
     </div>
     {% endif %}
 
-
-    <!-- ===================== -->
-    <!-- PhD -->
-    <!-- ===================== -->
+    <!-- PhD Students -->
     {% if page.phd %}
     <h2>PhD Students</h2>
     <div class="profiles-grid">
       {% for person in page.phd %}
         <div class="profile-card">
           {% if person.image %}
-            <img src="{{ '/assets/img/people/' | append: person.image | relative_url }}" class="profile-photo">
+            <img src="{{ '/assets/img/people/' | append: person.image | relative_url }}" alt="{{ person.name }}" class="profile-photo">
           {% endif %}
-
           <h3>
             {% if person.link %}
-              <a href="{{ person.link }}">{{ person.name }}</a>
+              <a href="{{ person.link | relative_url }}">{{ person.name }}</a>
             {% else %}
               {{ person.name }}
             {% endif %}
           </h3>
-
           {% if person.role %}
             <p class="role">{{ person.role }}</p>
           {% endif %}
-
-          <div class="profile-icons">
-            {% if person.email %}
-              <a href="mailto:{{ person.email }}"><i class="fas fa-envelope"></i></a>
-            {% endif %}
-            {% if person.link %}
-              <a href="{{ person.link }}"><i class="fas fa-globe"></i></a>
-            {% endif %}
-          </div>
-
+          {% if person.email %}
+            <p><a href="mailto:{{ person.email }}">{{ person.email }}</a></p>
+          {% endif %}
         </div>
       {% endfor %}
     </div>
     {% endif %}
 
-
-    <!-- ===================== -->
     <!-- Researchers -->
-    <!-- ===================== -->
     {% if page.researchers %}
     <h2>Researchers</h2>
     <div class="profiles-grid">
       {% for person in page.researchers %}
         <div class="profile-card">
           {% if person.image %}
-            <img src="{{ '/assets/img/people/' | append: person.image | relative_url }}" class="profile-photo">
+            <img src="{{ '/assets/img/people/' | append: person.image | relative_url }}" alt="{{ person.name }}" class="profile-photo">
           {% endif %}
-
           <h3>
             {% if person.link %}
-              <a href="{{ person.link }}">{{ person.name }}</a>
+              <a href="{{ person.link | relative_url }}">{{ person.name }}</a>
             {% else %}
               {{ person.name }}
             {% endif %}
           </h3>
-
           {% if person.role %}
             <p class="role">{{ person.role }}</p>
           {% endif %}
-
-          <div class="profile-icons">
-            {% if person.email %}
-              <a href="mailto:{{ person.email }}"><i class="fas fa-envelope"></i></a>
-            {% endif %}
-            {% if person.link %}
-              <a href="{{ person.link }}"><i class="fas fa-globe"></i></a>
-            {% endif %}
-          </div>
-
+          {% if person.email %}
+            <p><a href="mailto:{{ person.email }}">{{ person.email }}</a></p>
+          {% endif %}
         </div>
       {% endfor %}
     </div>
     {% endif %}
-
 
     <!-- ===================== -->
     <!-- Alumni -->
