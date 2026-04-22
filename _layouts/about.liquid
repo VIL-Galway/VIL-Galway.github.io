@@ -8,13 +8,7 @@ layout: default
 
     {% if page.profile and page.profile.image %}
       {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-      {% include figure.liquid 
-        loading="eager" 
-        path=profile_image_path 
-        class="hero-logo"
-        alt=page.profile.image 
-        cache_bust=true 
-      %}
+        <img src="{{ profile_image_path | relative_url }}" class="hero-logo" alt="logo">
     {% endif %}
 
     <h1 class="hero-title">
