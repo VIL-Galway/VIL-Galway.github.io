@@ -3,20 +3,21 @@ layout: default
 ---
 <div class="post">
 
-  <header class="post-header text-center">
+  <!-- ================= HERO ================= -->
+  <header class="hero text-center">
+
     {% if page.profile and page.profile.image %}
       {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-      {% assign profile_image_class = 'logo' %}
       {% include figure.liquid 
         loading="eager" 
         path=profile_image_path 
-        class=profile_image_class
+        class="hero-logo"
         alt=page.profile.image 
         cache_bust=true 
       %}
     {% endif %}
 
-    <h1 class="post-title">
+    <h1 class="hero-title">
       {% if site.title == 'blank' %}
         <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}
       {% else %}
@@ -25,26 +26,33 @@ layout: default
     </h1>
 
     {% if page.subtitle %}
-      <p class="desc">{{ page.subtitle }}</p>
+      <p class="hero-subtitle">{{ page.subtitle }}</p>
     {% endif %}
+
   </header>
 
+  <!-- ================= CONTENT ================= -->
   <article>
-    <div class="clearfix">{{ content }}</div>
 
-    {% if page.announcements and page.announcements.enabled %}
-      <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a></h2>
-      {% include news.liquid limit=page.announcements.limit %}
-    {% endif %}
+    <!-- ABOUT -->
+    <section class="section about">
+      <div class="clearfix">{{ content }}</div>
+    </section>
 
-    {% if page.latest_posts and page.latest_posts.enabled %}
-      <h2><a href="{{ '/blog/' | relative_url }}" style="color: inherit">Latest Posts</a></h2>
-      {% include latest_posts.liquid limit=page.latest_posts.limit %}
-    {% endif %}
-
+    <!-- PUBLICATIONS -->
     {% if page.selected_papers %}
-      <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit">Latest Publications</a></h2>
-      {% include selected_papers.liquid %}
+      <section class="section publications">
+        <h2>Latest Publications</h2>
+        {% include selected_papers.liquid %}
+      </section>
+    {% endif %}
+
+    <!-- NEWS -->
+    {% if page.announcements and page.announcements.enabled %}
+      <section class="section news">
+        <h2>News</h2>
+        {% include news.liquid limit=page.announcements.limit %}
+      </section>
     {% endif %}
 
   </article>
