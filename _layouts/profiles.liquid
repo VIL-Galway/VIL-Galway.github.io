@@ -13,7 +13,7 @@ layout: default
 
       <!-- First PI on top -->
       {% assign first_pi = page.pis | first %}
-      <div class="pi-card featured-pi">
+      <div class="profile-card featured-pi">
         {% if first_pi.image %}
           <img src="{{ '/assets/img/people/' | append: first_pi.image | relative_url }}"
               alt="{{ first_pi.name }}"
@@ -51,7 +51,7 @@ layout: default
 
       <!-- Remaining 3 below -->
       {% for person in page.pis offset:1 %}
-        <div class="pi-card">
+        <div class="profile-card">
           {% if person.image %}
             <img src="{{ '/assets/img/people/' | append: person.image | relative_url }}"
                 alt="{{ person.name }}"
@@ -130,11 +130,11 @@ layout: default
     </div>
     {% endif %}
 
-    <!-- PhD Students -->
-    {% if page.phd %}
-    <h2>PhD Students</h2>
+    <!-- Researchers -->
+    {% if page.researchers %}
+    <h2>Researchers</h2>
     <div class="profiles-grid">
-      {% for person in page.phd %}
+      {% for person in page.researchers %}
         <div class="profile-card">
           {% if person.image %}
             <img src="{{ '/assets/img/people/' | append: person.image | relative_url }}" alt="{{ person.name }}" class="profile-photo">
@@ -169,11 +169,11 @@ layout: default
     </div>
     {% endif %}
 
-    <!-- Researchers -->
-    {% if page.researchers %}
-    <h2>Researchers</h2>
+        <!-- PhD Students -->
+    {% if page.phd %}
+    <h2>PhD Students</h2>
     <div class="profiles-grid">
-      {% for person in page.researchers %}
+      {% for person in page.phd %}
         <div class="profile-card">
           {% if person.image %}
             <img src="{{ '/assets/img/people/' | append: person.image | relative_url }}" alt="{{ person.name }}" class="profile-photo">

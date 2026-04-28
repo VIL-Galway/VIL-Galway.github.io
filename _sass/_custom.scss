@@ -14,7 +14,8 @@
 /* GRID */
 .profiles-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  // grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(3, 1fr);  
   gap: 1.8rem;
 }
 
@@ -28,6 +29,34 @@
   text-align: center;
   border: 1px solid #f0f0f0;
   transition: all 0.25s ease;
+}
+
+/* If only 1 card → full width */
+.profiles-grid .profile-card:only-child {
+  grid-column: 1 / -1;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* If exactly 2 cards → each takes half */
+.profiles-grid:has(.profile-card:nth-child(2):last-child) {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* If last row has 1 card (example: 4 cards total) */
+.profiles-grid .profile-card:last-child:nth-child(3n + 1) {
+  grid-column: 2;
+}
+
+@media (max-width: 768px) {
+  .profiles-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .profile-card {
+    grid-column: auto !important;
+    max-width: 100%;
+  }
 }
 
 .profile-card:hover {
@@ -261,46 +290,6 @@
 
 
 
-/* Only affect PI section */
-.post h2:first-of-type + .profiles-grid {
-  grid-template-columns: repeat(2, minmax(260px, 1fr));
-}
-
-/* Mobile fallback */
-@media (max-width: 768px) {
-  .post h2:first-of-type + .profiles-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-.profile-card a i {
-  margin-right: 6px;
-  color: #007acc;
-}
-
-/* Bigger cards ONLY for PIs */
-.post h2:first-of-type + .profiles-grid .profile-card {
-  padding: 1.5rem;
-  transform: scale(1.05);
-}
-
-/* Bigger image for PIs */
-.post h2:first-of-type + .profiles-grid .profile-photo {
-  width: 180px;
-  height: 180px;
-}
-
-/* Bigger name */
-.post h2:first-of-type + .profiles-grid h3 {
-  font-size: 1.25rem;
-}
-
-/* Slight emphasis */
-.post h2:first-of-type + .profiles-grid .profile-card {
-  background: #ffffff;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-}
-
 .profile {
   max-width: 380px;
 }
@@ -322,8 +311,9 @@
 
 .pi-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+  align-items: start;
 }
 
 .pi-card {
@@ -344,11 +334,15 @@
   .pi-grid {
     grid-template-columns: 1fr;
   }
+
+  .featured-pi {
+    max-width: 100%;
+  }
 }
 
 .featured-pi {
   grid-column: 1 / -1;
-  max-width: 400px;
+  max-width: 420px;
   margin: 0 auto;
   text-align: center;
 }
