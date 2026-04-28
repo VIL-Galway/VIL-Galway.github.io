@@ -45,6 +45,14 @@ postdocs:
     email: "muhammad.ammarulhassan@universityofgalway.ie"
     image: "ammar.png"
 
+researchers:
+
+  - name: "Saahil Khanna"
+    link: "https://scholar.google.com/citations?user=UWMSGkcAAAAJ&hl=en&authuser=1&oi=sra"
+    role: "Research Assistant"
+    email: "saahil.khanna@universityofgalway.ie"
+    image: "saahil.png"
+
 phd:
   - name: "Adeel Hafeez"
     link: "https://scholar.google.com/citations?user=m3T4HOAAAAAJ&hl=en"
@@ -77,13 +85,7 @@ phd:
     email: "g.guidone@universityofgalway.ie"
     image: "gianpiero.png"     
 
-researchers:
 
-  - name: "Saahil Khanna"
-    link: "https://scholar.google.com/citations?user=UWMSGkcAAAAJ&hl=en&authuser=1&oi=sra"
-    role: "Research Assistant"
-    email: "saahil.khanna@universityofgalway.ie"
-    image: "saahil.png"
 
 alumni:
   - name: "Talha Iqbal"
@@ -97,4 +99,17 @@ alumni:
     role: "Research Assistant"
     email: "syed.shah@universityofgalway.ie"
     image: "syed.png"
+
+  - name: "Muhammad Hassam Baig"
+    link: "https://scholar.google.com/citations?hl=en&user=DrR7JxUAAAAJ"
+    role: "Research Assistant"
+    email: "syed.shah@universityofgalway.ie"
+    image: "syed.png"
+
+  - name: "Jeziel Antonio Ayala Garcia"
+    link: "https://www.linkedin.com/in/jeziel-ayala-fcg2030/"
+    role: "Research Assistant"
+    email: "syed.shah@universityofgalway.ie"
+    image: "syed.png"
 ---
+
