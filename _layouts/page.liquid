@@ -15,7 +15,19 @@ layout: default
   </header>
 
   <article>
+
+    {% if page.img %}
+      <div class="project-image">
+        <img
+          src="{{ page.img | relative_url }}"
+          alt="{{ page.title }}"
+          class="img-fluid rounded"
+        >
+      </div>
+    {% endif %}
+
     {{ content }}
+
   </article>
 
   {% if page.related_publications %}
