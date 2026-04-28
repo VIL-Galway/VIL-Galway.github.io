@@ -348,3 +348,16 @@
 .profile img {
   filter: drop-shadow(0 6px 12px rgba(0,0,0,0.1));
 }
+
+.pi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.featured-pi {
+  grid-column: 1 / -1;   /* spans full width */
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}

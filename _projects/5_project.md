@@ -4,7 +4,7 @@ title: Multi-Agent Stress Monitoring
 description: Agentic AI framework for chronic stress detection
 img: assets/img/projects/MASM.jpg
 importance: 5
-category: Healthcare
+category: Others
 ---
 
 ## Overview

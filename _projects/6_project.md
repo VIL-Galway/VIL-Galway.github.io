@@ -4,7 +4,7 @@ title: URGE – Acute Aortic Syndrome
 description: ML-based mortality prediction for cardiovascular surgery
 img: assets/img/projects/URGE.jpg
 importance: 6
-category: Healthcare
+category: Others
 ---
 
 ## Overview

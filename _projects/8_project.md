@@ -4,7 +4,7 @@ title: Transparency in Agentic AI
 description: Explainable and compliant agent-based AI systems
 img: assets/img/projects/TAAI.jpg
 importance: 8
-category: AI
+category: Responsible AI
 ---
 
 ## Overview

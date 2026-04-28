@@ -4,7 +4,7 @@ title: Fairness & Explainability in LLMs
 description: Bias detection and semantic enrichment for large language models
 img: assets/img/projects/FELLM.jpg
 importance: 3
-category: AI
+category: Responsible AI
 ---
 
 ## Overview

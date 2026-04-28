@@ -3,8 +3,8 @@ layout: page
 title: Pav Analytics
 description: AI-based pavement condition assessment for cycling and walking infrastructure
 img: assets/img/projects/pav-analytics.jpg
-importance: 1
-category: Infrastructure
+importance: 2
+category: Computer Vision
 ---
 
 ## Overview

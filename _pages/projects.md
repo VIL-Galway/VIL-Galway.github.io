@@ -5,7 +5,7 @@ permalink: /projects/
 description:
 nav: true
 nav_order: 4
-display_categories: [Infrastructure, AI, Healthcare]
+display_categories: [Computer Vision, Respossible AI, Others]
 horizontal: false
 ---
 
