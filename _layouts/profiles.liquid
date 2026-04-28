@@ -9,11 +9,11 @@ layout: default
     {% if page.pis %}
     <h2>Principal Investigators</h2>
 
-    <div class="profiles-grid pi-grid">
+    <div class="pi-grid">
 
       <!-- First PI on top -->
       {% assign first_pi = page.pis | first %}
-      <div class="profile-card featured-pi">
+      <div class="pi-card featured-pi">
         {% if first_pi.image %}
           <img src="{{ '/assets/img/people/' | append: first_pi.image | relative_url }}"
               alt="{{ first_pi.name }}"
@@ -32,18 +32,26 @@ layout: default
           <p class="role">{{ first_pi.role }}</p>
         {% endif %}
 
-        {% if first_pi.email %}
-          <p>
-            <a href="mailto:{{ first_pi.email }}">
-              <i class="fa-solid fa-envelope"></i> {{ first_pi.email }}
+        <div class="profile-links">
+
+          {% if first_pi.email %}
+            <a href="mailto:{{ first_pi.email }}" class="icon-link" title="Email">
+              <i class="fa-solid fa-envelope"></i>
             </a>
-          </p>
-        {% endif %}
+          {% endif %}
+
+          {% if first_pi.link %}
+            <a href="{{ first_pi.link }}" target="_blank" class="icon-link" title="Profile">
+              <i class="fa-solid fa-up-right-from-square"></i>
+            </a>
+          {% endif %}
+
+        </div>
       </div>
 
       <!-- Remaining 3 below -->
       {% for person in page.pis offset:1 %}
-        <div class="profile-card">
+        <div class="pi-card">
           {% if person.image %}
             <img src="{{ '/assets/img/people/' | append: person.image | relative_url }}"
                 alt="{{ person.name }}"
@@ -62,13 +70,21 @@ layout: default
             <p class="role">{{ person.role }}</p>
           {% endif %}
 
-          {% if person.email %}
-            <p>
-              <a href="mailto:{{ person.email }}">
-                <i class="fa-solid fa-envelope"></i> {{ person.email }}
+          <div class="profile-links">
+
+            {% if person.email %}
+              <a href="mailto:{{ person.email }}" class="icon-link" title="Email">
+                <i class="fa-solid fa-envelope"></i>
               </a>
-            </p>
-          {% endif %}
+            {% endif %}
+
+            {% if person.link %}
+              <a href="{{ person.link }}" target="_blank" class="icon-link" title="Profile">
+                <i class="fa-solid fa-up-right-from-square"></i>
+              </a>
+            {% endif %}
+
+          </div>
         </div>
       {% endfor %}
 
@@ -94,13 +110,21 @@ layout: default
           {% if person.role %}
             <p class="role">{{ person.role }}</p>
           {% endif %}
-          {% if person.email %}
-            <p>
-              <a href="mailto:{{ person.email }}">
-                <i class="fa-solid fa-envelope"></i> {{ person.email }}
+          <div class="profile-links">
+
+            {% if person.email %}
+              <a href="mailto:{{ person.email }}" class="icon-link" title="Email">
+                <i class="fa-solid fa-envelope"></i>
               </a>
-            </p>
-          {% endif %}
+            {% endif %}
+
+            {% if person.link %}
+              <a href="{{ person.link }}" target="_blank" class="icon-link" title="Profile">
+                <i class="fa-solid fa-up-right-from-square"></i>
+              </a>
+            {% endif %}
+
+          </div>
         </div>
       {% endfor %}
     </div>
@@ -125,13 +149,21 @@ layout: default
           {% if person.role %}
             <p class="role">{{ person.role }}</p>
           {% endif %}
-          {% if person.email %}
-            <p>
-              <a href="mailto:{{ person.email }}">
-                <i class="fa-solid fa-envelope"></i> {{ person.email }}
+          <div class="profile-links">
+
+            {% if person.email %}
+              <a href="mailto:{{ person.email }}" class="icon-link" title="Email">
+                <i class="fa-solid fa-envelope"></i>
               </a>
-            </p>
-          {% endif %}
+            {% endif %}
+
+            {% if person.link %}
+              <a href="{{ person.link }}" target="_blank" class="icon-link" title="Profile">
+                <i class="fa-solid fa-up-right-from-square"></i>
+              </a>
+            {% endif %}
+
+          </div>
         </div>
       {% endfor %}
     </div>
@@ -156,13 +188,21 @@ layout: default
           {% if person.role %}
             <p class="role">{{ person.role }}</p>
           {% endif %}
-          {% if person.email %}
-            <p>
-              <a href="mailto:{{ person.email }}">
-                <i class="fa-solid fa-envelope"></i> {{ person.email }}
+          <div class="profile-links">
+
+            {% if person.email %}
+              <a href="mailto:{{ person.email }}" class="icon-link" title="Email">
+                <i class="fa-solid fa-envelope"></i>
               </a>
-            </p>
-          {% endif %}
+            {% endif %}
+
+            {% if person.link %}
+              <a href="{{ person.link }}" target="_blank" class="icon-link" title="Profile">
+                <i class="fa-solid fa-up-right-from-square"></i>
+              </a>
+            {% endif %}
+
+          </div>
         </div>
       {% endfor %}
     </div>
