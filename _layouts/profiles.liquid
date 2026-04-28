@@ -8,39 +8,43 @@ layout: default
     <!-- PIs -->
     {% if page.pis %}
     <h2>Principal Investigators</h2>
+
     <div class="profiles-grid">
       {% assign first_pi = page.pis | first %}
-        <div class="profile-card">
-          {% if person.image %}
-            <img src="{{ '/assets/img/people/' | append: person.image | relative_url }}" alt="{{ person.name }}" class="profile-photo">
+
+      <div class="profile-card">
+        {% if first_pi.image %}
+          <img src="{{ '/assets/img/people/' | append: first_pi.image | relative_url }}"
+              alt="{{ first_pi.name }}"
+              class="profile-photo">
+        {% endif %}
+
+        <h3>
+          {% if first_pi.link %}
+            <a href="{{ first_pi.link | relative_url }}">{{ first_pi.name }}</a>
+          {% else %}
+            {{ first_pi.name }}
           {% endif %}
-          <h3>
-            {% if person.link %}
-              <a href="{{ person.link | relative_url }}">{{ person.name }}</a>
-            {% else %}
-              {{ person.name }}
-            {% endif %}
-          </h3>
-          {% if person.role %}
-            <p class="role">{{ person.role }}</p>
+        </h3>
+
+        {% if first_pi.role %}
+          <p class="role">{{ first_pi.role }}</p>
+        {% endif %}
+
+        <div class="profile-links">
+          {% if first_pi.email %}
+            <a href="mailto:{{ first_pi.email }}" class="icon-link" title="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
           {% endif %}
-          <div class="profile-links">
 
-            {% if person.email %}
-              <a href="mailto:{{ person.email }}" class="icon-link" title="Email">
-                <i class="fa-solid fa-envelope"></i>
-              </a>
-            {% endif %}
-
-            {% if person.link %}
-              <a href="{{ person.link }}" target="_blank" class="icon-link" title="Profile">
-                <i class="fa-solid fa-up-right-from-square"></i>
-              </a>
-            {% endif %}
-
-          </div>
+          {% if first_pi.link %}
+            <a href="{{ first_pi.link }}" target="_blank" class="icon-link" title="Profile">
+              <i class="fa-solid fa-up-right-from-square"></i>
+            </a>
+          {% endif %}
         </div>
-      {% endfor %}
+      </div>
     </div>
     {% endif %}
 
