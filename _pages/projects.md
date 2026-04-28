@@ -5,7 +5,7 @@ permalink: /projects/
 description:
 nav: true
 nav_order: 4
-display_categories: [Computer Vision, Resposible AI, Others]
+display_categories: [Computer Vision, Responsible AI, Others]
 horizontal: false
 ---
 

@@ -13,7 +13,7 @@ layout: default
 
       <!-- First PI on top -->
       {% assign first_pi = page.pis | first %}
-      <div class="profile-card featured-pi">
+      <div class="pi-card featured-pi">
         {% if first_pi.image %}
           <img src="{{ '/assets/img/people/' | append: first_pi.image | relative_url }}"
               alt="{{ first_pi.name }}"
@@ -51,7 +51,7 @@ layout: default
 
       <!-- Remaining 3 below -->
       {% for person in page.pis offset:1 %}
-        <div class="profile-card">
+        <div class="pi-card">
           {% if person.image %}
             <img src="{{ '/assets/img/people/' | append: person.image | relative_url }}"
                 alt="{{ person.name }}"
