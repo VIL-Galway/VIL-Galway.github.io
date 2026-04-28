@@ -3,8 +3,8 @@ layout: page
 title: AI4MI – Augmented Reading Room
 description: AI-powered radiology workflows using Apple Vision Pro
 img: assets/img/projects/AI4MI.jpg
-importance: 4
-category: Healthcare
+importance: 3
+category: Computer Vision
 ---
 
 ## Overview

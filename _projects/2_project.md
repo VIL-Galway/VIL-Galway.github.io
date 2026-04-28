@@ -4,7 +4,7 @@ title: Transparency & Explainability in AI
 description: Semantic Web approach for linked model and data cards in AI systems
 img: assets/img/projects/TEAI.jpg
 importance: 2
-category: AI
+category: Responsible AI
 ---
 
 ## Overview

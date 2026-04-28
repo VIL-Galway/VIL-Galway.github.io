@@ -8,22 +8,60 @@ layout: default
     <!-- PIs -->
     {% if page.pis %}
     <h2>Principal Investigators</h2>
-    <div class="profiles-grid">
-      {% for person in page.pis %}
+
+    <div class="profiles-grid pi-grid">
+
+      <!-- First PI on top -->
+      {% assign first_pi = page.pis | first %}
+      <div class="profile-card featured-pi">
+        {% if first_pi.image %}
+          <img src="{{ '/assets/img/people/' | append: first_pi.image | relative_url }}"
+              alt="{{ first_pi.name }}"
+              class="profile-photo">
+        {% endif %}
+
+        <h3>
+          {% if first_pi.link %}
+            <a href="{{ first_pi.link }}">{{ first_pi.name }}</a>
+          {% else %}
+            {{ first_pi.name }}
+          {% endif %}
+        </h3>
+
+        {% if first_pi.role %}
+          <p class="role">{{ first_pi.role }}</p>
+        {% endif %}
+
+        {% if first_pi.email %}
+          <p>
+            <a href="mailto:{{ first_pi.email }}">
+              <i class="fa-solid fa-envelope"></i> {{ first_pi.email }}
+            </a>
+          </p>
+        {% endif %}
+      </div>
+
+      <!-- Remaining 3 below -->
+      {% for person in page.pis offset:1 %}
         <div class="profile-card">
           {% if person.image %}
-            <img src="{{ '/assets/img/people/' | append: person.image | relative_url }}" alt="{{ person.name }}" class="profile-photo">
+            <img src="{{ '/assets/img/people/' | append: person.image | relative_url }}"
+                alt="{{ person.name }}"
+                class="profile-photo">
           {% endif %}
+
           <h3>
             {% if person.link %}
-              <a href="{{ person.link | relative_url }}">{{ person.name }}</a>
+              <a href="{{ person.link }}">{{ person.name }}</a>
             {% else %}
               {{ person.name }}
             {% endif %}
           </h3>
+
           {% if person.role %}
             <p class="role">{{ person.role }}</p>
           {% endif %}
+
           {% if person.email %}
             <p>
               <a href="mailto:{{ person.email }}">
@@ -33,6 +71,7 @@ layout: default
           {% endif %}
         </div>
       {% endfor %}
+
     </div>
     {% endif %}
 

@@ -3,8 +3,8 @@ layout: page
 title: Cardiovascular Data Analysis
 description: ML & DL for multi-modal cardiovascular imaging
 img: assets/img/projects/CDA.jpg
-importance: 7
-category: Healthcare
+importance: 1
+category: Computer Vision
 ---
 
 ## Overview
