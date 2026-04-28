@@ -59,15 +59,28 @@ layout: default
   </header>
 
   <article class="post-content">
+
+    {% if page.img %}
+      <div class="project-image">
+        <img
+          src="{{ page.img | relative_url }}"
+          alt="{{ page.title }}"
+          class="img-fluid rounded"
+        >
+      </div>
+    {% endif %}
+
     {% if page.toc and page.toc.beginning %}
       <div id="table-of-contents">
         {% toc %}
       </div>
       <hr>
     {% endif %}
+
     <div id="markdown-content">
       {{ content }}
     </div>
+
   </article>
 
   {% if page.citation %}
