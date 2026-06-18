@@ -416,7 +416,12 @@ ninja.data = [{
           section: "News",},{id: "news-our-lab-s-paper-has-been-accepted-at-miccai-amai-2025-for-a-poster-presentation",
           title: 'Our lab’s paper has been accepted at MICCAI-AMAI 2025 for a poster presentation....',
           description: "",
-          section: "News",},{id: "projects-pav-analytics",
+          section: "News",},{id: "projects-building-smart-connected-citizens-with-sense",
+          title: 'Building Smart, Connected Citizens with SENSE',
+          description: "To build virtual cities for the future",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/10_project/";
+            },},{id: "projects-pav-analytics",
           title: 'Pav Analytics',
           description: "AI-based pavement condition assessment for cycling and walking infrastructure",
           section: "Projects",handler: () => {
