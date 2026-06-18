@@ -2,7 +2,7 @@
 layout: page
 title:  Building Smart, Connected Citizens with SENSE
 description: To build virtual cities for the future
-img: assets/img/projects/sense.jpg
+img: assets/img/projects/Sense2.png
 importance: 2
 category: Computer Vision
 ---
