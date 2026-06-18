@@ -53,6 +53,11 @@ researchers:
     email: "saahil.khanna@universityofgalway.ie"
     image: "saahil.png"
 
+  - name: "Numaan Naeem"
+    link: "https://scholar.google.com/citations?user=Qk3lshgAAAAJ&hl=en"
+    role: "Research Assistant"
+    email: "numaan.naeem@universityofgalway.ie"
+    image: "numaan.png"
 phd:
   - name: "Adeel Hafeez"
     link: "https://scholar.google.com/citations?user=m3T4HOAAAAAJ&hl=en"
