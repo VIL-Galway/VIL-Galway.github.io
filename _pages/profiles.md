@@ -58,6 +58,13 @@ researchers:
     role: "Research Assistant"
     email: "numaan.naeem@universityofgalway.ie"
     image: "numaan.png"
+
+  - name: "Syed Haider Shah"
+    link: "https://scholar.google.com/citations?user=gI9LissAAAAJ&hl=en"
+    role: "Research Assistant"
+    email: "syed.shah@universityofgalway.ie"
+    image: "syed.png"
+    
 phd:
   - name: "Adeel Hafeez"
     link: "https://scholar.google.com/citations?user=m3T4HOAAAAAJ&hl=en"
@@ -111,11 +118,6 @@ alumni:
     email: "syed.shah@universityofgalway.ie"
     image: "hassam.png"
 
-  - name: "Syed Haider Shah"
-    link: "https://scholar.google.com/citations?user=gI9LissAAAAJ&hl=en"
-    role: "Research Assistant"
-    email: "syed.shah@universityofgalway.ie"
-    image: "syed.png"
 
 
 
