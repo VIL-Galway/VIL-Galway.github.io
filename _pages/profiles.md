@@ -64,9 +64,9 @@ researchers:
     role: "Research Assistant"
     email: "syed.shah@universityofgalway.ie"
     image: "syed.png"
-    
+
 phd:
-  - name: "Adeel Hafeez"
+  - name: "M. Adeel Hafeez"
     link: "https://scholar.google.com/citations?user=m3T4HOAAAAAJ&hl=en"
     role: "Since Fall 2022"
     email: "m.hafeez1@universityofgalway.ie"
