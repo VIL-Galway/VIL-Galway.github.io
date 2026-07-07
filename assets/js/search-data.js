@@ -424,6 +424,11 @@ ninja.data = [{
           description: "To build virtual cities for the future",
           section: "Projects",handler: () => {
               window.location.href = "/projects/10_project/";
+            },},{id: "projects-borderlink-border-control-agencies-for-interlinked-and-interoperable-future",
+          title: 'BORDERLINK – Border Control Agencies for Interlinked and Interoperable Future',
+          description: "BORDERLINK is a Horizon Europe project funded by the European Union, the UK, and Switzerland that enhances customs and border management by pioneering innovative technologies, developing reference databases, and establishing standards to improve interoperability and interconnectivity. By improving interoperability, BORDERLINK enables seamless cooperation between customs administrations, border control agencies, and security stakeholders",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/11_project/";
             },},{id: "projects-pav-analytics",
           title: 'Pav Analytics',
           description: "AI-based pavement condition assessment for cycling and walking infrastructure",
