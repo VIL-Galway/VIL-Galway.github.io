@@ -1,14 +1,14 @@
 ---
 layout: page
 title: BORDERLINK – Border Control Agencies for Interlinked and Interoperable Future
-description: BORDERLINK is a Horizon Europe project funded by the European Union, the UK, and Switzerland that enhances customs and border management by pioneering innovative technologies, developing reference databases, and establishing standards to improve interoperability and interconnectivity. By improving interoperability, BORDERLINK enables seamless cooperation between customs administrations, border control agencies, and security stakeholders
+description: BORDERLINK  enhances customs and border management by pioneering innovative technologies, developing reference databases/Dataspace, and establishing standards to improve interoperability and interconnectivity. 
 img: assets/img/projects/borderlink.jpeg
 importance: 7
 category: Others
 ---
 
 ## Overview
-URGE evaluates ML models for predicting mortality in acute aortic syndrome patients.
+BORDERLINK is a Horizon Europe project funded by the European Union, the UK, and Switzerland that enhances customs and border management by pioneering innovative technologies, developing reference databases, and establishing standards to improve interoperability and interconnectivity. By improving interoperability, BORDERLINK enables seamless cooperation between customs administrations, border control agencies, and security stakeholders
 
 ## Funding
 - Horizon Europe
