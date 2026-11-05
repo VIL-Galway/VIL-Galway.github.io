@@ -469,9 +469,9 @@ ninja.data = [{
           description: "Explainable and compliant agent-based AI systems",
           section: "Projects",handler: () => {
               window.location.href = "/projects/8_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
+            },},{id: "projects-prosafe-twin-project",
+          title: 'PROSAFE-TWIN Project',
+          description: "AI-powered digital twins to anticipate road-safety risks and help prevent accidents before they occur.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
             },},{id: "projects-project-1",
