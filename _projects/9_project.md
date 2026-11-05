@@ -1,81 +1,65 @@
 ---
 layout: page
-title: project 9
-description: another project with an image 🎉
-img: assets/img/6.jpg
-importance: 4
-category: fun
-hidden: true
+title: PROSAFE-TWIN Project
+description: AI-powered digital twins to anticipate road-safety risks and help prevent accidents before they occur.
+img: assets/img/projects/PRO-TWIN.jpg
+importance: 2
+category: Computer Vision
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Overview
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+**Full project title:** Prosafe-Twin: Proactive Real-Time Road Safety Interventions Via Predictive AI-Enabled Digital Twins
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+The [University of Galway](https://www.linkedin.com/school/universityofgalway/) is a partner in [PROSAFE-TWIN](https://www.linkedin.com/company/prosafe-twin-project/), a €5 million Horizon Europe research project developing AI-powered digital twins to anticipate road-safety risks and help prevent crashes.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+The project brings together 17 organisations from Europe and the United States. It combines artificial intelligence, traffic modelling and real-time data to identify emerging hazards and help road operators intervene earlier.
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+## Funding
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+- **Funding agency:** [Horizon Europe](https://www.linkedin.com/company/horizon-europe/)
+- **Total project funding:** €5 million
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+## Duration
 
-{% raw %}
+**October 2026 – September 2030**
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+## Team
 
-{% endraw %}
+The [University of Galway School of Computer Science](https://www.linkedin.com/company/university-of-galway-school-of-computer-science/) contributes to the project alongside collaborators from Civil Engineering and [Rinn AI](https://www.linkedin.com/company/rinn-ai/).
+
+- **Principal Investigator:** Dr [Ihsan Ullah](https://www.linkedin.com/in/ihsan-ullah-a2a6b72b/)
+- **Co-Principal Investigator:** Dr [Jawad Manzoor](https://www.linkedin.com/in/jawadmanzoor/)
+
+## Researchers
+
+- Dr Marcus M. Keane
+- Dr Paulo Lissa
+- Andy Donald
+
+## Description
+
+PROSAFE-TWIN will build hybrid digital twins, or virtual replicas of real road networks. These twins combine physics-based models of how traffic moves with AI that learns from roadside sensors, connected vehicles and weather data.
+
+The aim is to create a live risk map showing where hazardous situations are likely to develop next, such as queues hidden from approaching drivers or potential conflicts involving pedestrians and cyclists.
+
+## Thematic Areas
+
+- Artificial Intelligence and Machine Learning
+- Digital Twins
+- Traffic Modelling and Road Safety
+- Real-Time Data Analysis
+
+## Impact
+
+Pilot demonstrations are planned from 2028 in Spain, the Netherlands, Portugal and Slovenia. The project aims to help road operators act before hazards become crashes, better protect vulnerable road users and contribute to Europe's Vision Zero ambition.
+
+**UN Sustainable Development Goals addressed**
+
+- **SDG 3:** Good Health and Well-Being
+- **SDG 11:** Sustainable Cities and Communities
+- **SDG 13:** Climate Action
+
+## Project Website
+
+[https://prosafe-twin.eu/](https://prosafe-twin.eu/)
