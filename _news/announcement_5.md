@@ -11,9 +11,4 @@ His thesis was titled **“Camera-Only Geometric Perception for Depth Estimation
 The thesis was supervised by Dr [**Ihsan Ullah**](https://www.linkedin.com/in/ihsan-ullah-a2a6b72b/) and Prof [**Michael Madden**](https://www.linkedin.com/in/mgmadden/).
 Thank you to the viva chair, Dr [**Enda Howley**](https://www.linkedin.com/in/enda-howley-6631722/), the external examiner, Prof [**Toby Breckon**](https://www.linkedin.com/in/tobybreckon/) of Durham University, and the internal examiner, Dr **Nazre Batool**.
 
-<img
-  src="{{ '/assets/img/adeel_phd.jpg' | relative_url }}"
-  alt="Photo from Muhammad Adeel Hafeez’s PhD viva"
-  loading="lazy"
-  style="display: block; width: 100%; max-width: 360px; height: auto; margin-top: 0.75rem;"
->
+![Photo from Muhammad Adeel Hafeez’s PhD viva]({{ '/assets/img/adeel_phd.jpg' | relative_url }})
